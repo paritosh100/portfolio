@@ -1,0 +1,44 @@
+---
+title: "Infection-Spread Simulation (Agent-Based SIR Model)"
+publishedAt: "2025-07-13"
+summary: "Built a simulation using Python and the Mesa framework to model how an infection spreads through a population. Agents move randomly on a grid, interact based on proximity, and transition through Susceptible, Infected, and Recovered states. The project includes a real-time animation and a dynamic SIR curve to visualize outbreak dynamics over time."
+images:
+  - "/images/projects/project-02/infection-simulation.png"
+team:
+  - name: "Paritosh Gandre"
+    role: "Software Engineer"
+    avatar: "/images/LINKEDIN-PROFILE.png"
+    linkedIn: "https://www.linkedin.com/in/paritosh-gandre/"
+link: "https://github.com/paritosh100/Infection-Simulation-Mesa"
+---
+
+## Links
+
+- 🔗 [View Project on GitHub](https://github.com/paritosh100/Infection-Simulation-Mesa)
+
+## Overview
+
+This project implements a multi-agent simulation of infectious disease spread using the SIR (Susceptible-Infected-Recovered) model. Built with Python and Mesa, the simulation visualizes how an infection propagates through a population as agents move and interact on a grid. It demonstrates emergent patterns in epidemic dynamics and offers insight into the role of agent behavior, proximity, and recovery in controlling outbreaks.
+
+## Key Features
+
+- **Agent-Based Modeling**: Each agent is assigned an S, I, or R state and moves randomly on a 2D grid. Transmission occurs when susceptible agents are near infected ones.
+- **Real-Time Visualization**: The simulation includes a live animation panel showing agents as colored dots (blue = susceptible, red = infected, green = recovered).
+- **SIR Curve Chart**: Tracks the count of each state over time in a separate dynamic plot, offering an epidemiological perspective of the outbreak.
+- **Parameter Tuning**: Infection and recovery rates can be adjusted to explore different scenarios and disease behaviors.
+- **Data Output**: Logs are generated for infection spread trends and model state at each time step for post-simulation analysis.
+
+## Technologies Used
+
+- **Mesa**: A Python framework for building agent-based models.
+- **Matplotlib**: For real-time SIR curve visualization.
+- **NumPy**: For efficient numerical operations on agent states and grid updates.
+- **Google Colab / Jupyter Notebook**: Used for development, visualization, and sharing outputs interactively.
+
+## Challenges and Learnings
+
+A key challenge was synchronizing the agent-level simulation with the global time-series SIR chart, especially while maintaining performance and clarity in real-time visualization. It was also an opportunity to explore how simple local rules at the agent level can lead to complex and interpretable global outcomes. Tuning the model parameters revealed the sensitivity of outbreak duration and peak infection based on just small changes in behavior.
+
+## Outcome
+
+The project served as my first dive into agent-based modeling and epidemiological simulations. It gave me hands-on experience with Mesa and real-time plotting, and taught me how to interpret spatial and temporal dynamics in infectious systems. It also helped build a shareable, animated tool for visualizing how small changes in individual behavior can impact public health outcomes at scale.

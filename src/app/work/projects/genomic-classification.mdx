@@ -1,0 +1,43 @@
+---
+title: "Genomic Sequence Classification using Deep Learning"
+publishedAt: "2025-04-18"
+summary: "Built and compared CNN and HMM models to classify synthetic genomic sequences into functional categories. This project explores pattern recognition in DNA sequences using profile-based and deep learning approaches."
+
+team:
+  - name: "Paritosh Gandre"
+    role: "AI Research Assistant"
+    avatar: "/images/LINKEDIN-PROFILE.png"
+    linkedIn: "https://www.linkedin.com/in/paritosh-gandre/"
+link: "https://github.com/paritosh100/genomic-sequence-classification"
+---
+## Links
+
+- 🔗 [View Project on GitHub](https://github.com/paritosh100/genomic-sequence-classification)
+
+## Overview
+
+This research project focused on classifying synthetic genomic sequences into biological categories using two distinct modeling approaches: Profile Hidden Markov Models (HMMs) and Convolutional Neural Networks (CNNs). The dataset was constructed using position weight matrices (PWMs) to simulate motifs in DNA, representing four distinct sequence classes. The goal was to evaluate how traditional probabilistic models and deep learning compare in genomic pattern recognition tasks.
+
+## Key Features
+
+- **Synthetic Dataset Creation**: Generated labeled DNA sequences using PWMs to mimic transcription factor binding sites and other biological motifs.
+- **HMM-Based Classification**: Built profile HMMs using `hmmlearn` to capture motif probabilities and perform class inference.
+- **CNN-Based Classifier**: Designed a 1D CNN using Keras to learn spatial patterns in nucleotide sequences, enabling accurate multi-class classification.
+- **Model Comparison**: Evaluated both models using accuracy, ROC AUC, and confusion matrices to understand performance trade-offs.
+- **Motif Visualization**: Visualized activation maps and motif hits to interpret which sequence patterns influenced model predictions.
+
+## Technologies Used
+
+- **Python**: For model development and data processing.
+- **Keras/TensorFlow**: To build and train the CNN model.
+- **hmmlearn**: For implementing profile HMMs.
+- **NumPy & Pandas**: For sequence generation and manipulation.
+- **Matplotlib & Seaborn**: For visualizing motifs and performance metrics.
+
+## Challenges and Learnings
+
+Simulating biologically meaningful DNA patterns and ensuring realistic motif placement required careful tuning of sequence generators. Comparing CNNs and HMMs gave hands-on experience in the trade-offs between data-hungry deep models and interpretable probabilistic ones. This project also deepened my understanding of sequence learning, positional encoding, and classification in bioinformatics.
+
+## Outcome
+
+The CNN model outperformed HMMs in classification accuracy and generalization, highlighting its ability to detect spatial motifs in raw sequences. However, HMMs offered interpretability and motif scoring benefits. This dual approach underscored the importance of aligning model choice with the problem context—whether pri

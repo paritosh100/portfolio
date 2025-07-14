@@ -1,0 +1,45 @@
+---
+title: "Music Genre Classifier (Deep Learning on Audio)"
+publishedAt: "2025-05-10"
+summary: "Trained a neural network to classify music tracks into genres using audio features extracted from the GTZAN dataset. This project covers end-to-end ML workflow including preprocessing, model building, and evaluation."
+images:
+  - "/images/projects/project-02/music-genre-classifier.png"
+team:
+  - name: "Paritosh Gandre"
+    role: "Machine Learning Engineer"
+    avatar: "/images/LINKEDIN-PROFILE.png"
+    linkedIn: "https://www.linkedin.com/in/paritosh-gandre/"
+link : "https://github.com/paritosh100/Music-Genre-Classifier"
+---
+## Links
+
+- 🔗 [View Project on GitHub](https://github.com/paritosh100/Music-Genre-Classifier)
+
+## Overview
+
+This project uses deep learning to classify music tracks into genres like rock, classical, hip-hop, and jazz using raw audio data. Built on the GTZAN dataset, it includes preprocessing with MFCC feature extraction, neural network design with TensorFlow/Keras, and model evaluation. The goal was to explore how well genre classification can be automated from short clips of audio data using simple but effective neural architectures.
+
+## Key Features
+
+- **Audio Preprocessing**: Extracted Mel-frequency cepstral coefficients (MFCCs) from .wav files to capture tonal features relevant to genre classification.
+- **Neural Network Classifier**: Implemented a sequential deep learning model with dense and dropout layers in Keras, achieving strong performance on validation data.
+- **Multiclass Output**: Trained the model to classify across 10 genres with softmax output and categorical crossentropy loss.
+- **Exploratory Analysis**: Visualized waveform, spectrograms, and MFCCs to better understand genre-specific audio patterns.
+- **Confusion Matrix & Metrics**: Evaluated performance using accuracy, precision, recall, and a confusion matrix to identify class-level weaknesses.
+
+## Technologies Used
+
+- **Python**: For scripting and experimentation.
+- **TensorFlow/Keras**: To build and train the neural network model.
+- **Librosa**: For audio processing and MFCC extraction.
+- **Matplotlib & Seaborn**: For data visualization and performance metrics.
+- **GTZAN Dataset**: A standard benchmark for music genre classification tasks.
+
+## Challenges and Learnings
+
+A core challenge was managing audio file inconsistencies and ensuring MFCC inputs were uniformly shaped. Additionally, balancing model complexity with overfitting on a relatively small dataset taught important lessons about regularization, dropout, and early stopping. Experimenting with different architectures also helped build intuition about feature learning from audio.
+
+## Outcome
+
+The classifier successfully predicts music genres with good accuracy on unseen samples, demonstrating the effectiveness of MFCCs as input features. The project gave me hands-on experience in audio-based machine learning and provided a foundation for future work in audio tagging, speech recognition, or sound classification.
+

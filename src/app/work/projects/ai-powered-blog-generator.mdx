@@ -1,0 +1,45 @@
+---
+title: "AI-Powered Blog Post Generator"
+publishedAt: "2025-06-20"
+summary: "Built an AI-powered microservice that generates SEO-optimized blog posts daily using GPT-3.5. Automates the full content pipeline with scheduling, post-processing, and publication-ready outputs."
+images:
+  - "/images/projects/project-02/ai-blog-generator.png"
+team:
+  - name: "Paritosh Gandre"
+    role: "Data Scientist & Developer"
+    avatar: "/images/LINKEDIN-PROFILE.png"
+    linkedIn: "https://www.linkedin.com/in/paritosh-gandre/"
+link: "https://github.com/paritosh100/AI-Powered-Blog-Post-Generator-with-Daily-Automation"
+---
+
+## Links
+
+- 🔗 [View Project on GitHub](https://github.com/paritosh100/AI-Powered-Blog-Post-Generator-with-Daily-Automation)
+
+## Overview
+
+This project automates the creation of daily blog posts using OpenAI’s GPT-3.5 API. It runs as a Flask-based microservice with an integrated scheduling system that generates fresh, SEO-ready content with minimal human intervention. The pipeline includes prompt engineering, content formatting, and automated post-saving. Ideal for content teams or solo creators looking to scale up their publishing without sacrificing quality.
+
+## Key Features
+
+- **AI-Generated Content**: Uses GPT-3.5 to generate high-quality, topic-driven blog posts with custom prompts and templates.
+- **Daily Automation**: Scheduled with Python’s `cron` and `datetime` modules to trigger daily content generation and save outputs automatically.
+- **Markdown Export**: Final posts are saved in markdown format for easy editing or direct publication on static blog platforms.
+- **Prompt Engineering**: Tuned prompt templates to control tone, structure, and content depth for consistency and SEO-friendliness.
+- **Multi-topic Ready**: Easily extendable to generate posts across different topics by editing the input topic list.
+
+## Technologies Used
+
+- **OpenAI GPT-3.5 API**: For generating blog content with context-aware language generation.
+- **Flask**: To run the microservice and expose generation endpoints.
+- **Python (Cron + OS)**: For automating daily content runs.
+- **Markdown & JSON**: For saving, formatting, and managing post data.
+- **GitHub Actions (Optional)**: Can be integrated for CI/CD or publishing automation.
+
+## Challenges and Learnings
+
+Managing prompt consistency while ensuring topic relevance and depth was a key challenge. Iterative testing helped fine-tune prompts for better structure and keyword density. Automating file saving and managing system-level scheduling improved reliability, and taught valuable lessons in making AI tools production-ready.
+
+## Outcome
+
+The project reduced blog creation time by 70% and enabled hands-off content production with daily freshness. It's easily extendable, simple to deploy, and integrates well with modern publishing stacks. It also opened doors to future enhancements like real-time topic scraping and direct WordPress or Ghost CMS integration.
