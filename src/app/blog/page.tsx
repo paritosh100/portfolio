@@ -41,9 +41,9 @@ export default function Blog() {
       </Heading>
 				{blog.work.display && (
             <>
-              <Heading as="h2" id={blog.work.title} variant="display-strong-s" marginBottom="m">
+              {/* <Heading as="h1" id={blog.work.title} variant="display-strong-s" marginBottom="m">
                 {blog.work.title}
-              </Heading>
+              </Heading> */}
               <Column fillWidth gap="l" marginBottom="40">
                 {blog.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
