@@ -9,13 +9,13 @@ const person = {
   role: "Data Scientist",
   avatar: "/images/LINKEDIN-PROFILE.png",
   email: "paritoshkrcg@gmail.com",
-  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Marathi", "Hindi"], // optional: Leave the array empty if you don't want to display languages
+  location: "America/New_York", // Expecting the IANA time zone identifier, e.g., &#39;Europe/Vienna&#39;
+  languages: ["English", "Marathi", "Hindi"], // optional: Leave the array empty if you don&#39;t want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&#39;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the intersection of
@@ -53,7 +53,7 @@ const home = {
   path: "/",
   image: "/images/LINKEDIN-PROFILE.png",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name} Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Turning Complex Data into Real-World Solutions </>,
   featured: {
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Paritosh, a data scientist with a background in AI and computer vision, currently exploring
+      I&#39;m Paritosh, a data scientist with a background in AI and computer vision, currently exploring
        ways to turn complex problems into simple, intelligent systems. Outside of work, I experiment 
        with personal projects: from multi-agent simulations to generative AI tools.
     </>
@@ -91,8 +91,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm Paritosh Gandre, a data scientist with hands-on experience in machine learning, 
-        deep learning, and computer vision. I recently completed my Master's in Data Science from 
+        I&#39;m Paritosh Gandre, a data scientist with hands-on experience in machine learning, 
+        deep learning, and computer vision. I recently completed my Master&#39;s in Data Science from 
         Kent State University and have worked on real-world projects in genomics, AI-powered automation,
          and multi-agent systems. I build intelligent systems that solve problems from DNA 
          sequence classification to AI-driven blog generation and 
@@ -109,11 +109,11 @@ const about = {
     institutions: [
       {
         name: "Kent State University",
-        description: <>Master's in Data Science 2023 - 2025</>,
+        description: <>Master&#39;s in Data Science 2023 - 2025</>,
       },
       {
         name: "University of Mumbai",
-        description: <>Bachelor's of Engineering in Computer Engineering 2021 - 2023</>,
+        description: <>Bachelor&#39;s of Engineering in Computer Engineering 2021 - 2023</>,
       },
     ],
   },
@@ -234,7 +234,7 @@ const blog = {
           </>,
         ],
         images: [
-          // // optional: leave the array empty if you don't want to display images
+          // // optional: leave the array empty if you don&#39;t want to display images
           // {
           //   src: "/images/projects/project-01/cover-01.jpg",
           //   alt: "Once UI Project",
