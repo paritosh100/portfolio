@@ -3,11 +3,11 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
+import { Fade, Flex, Line, ToggleButton, Button} from "@once-ui-system/core";
 
 import { routes, display, person, about, blog, work, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
-import styles from "./Header.module.scss";
+import styles from "./Header.module.scss";  
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -127,8 +127,22 @@ export const Header = () => {
                     href="/work"
                     selected={pathname.startsWith("/work")}
                   />
-                </>
+                </>                                     
               )}
+              {
+              <Button
+                href="/PARITOSH-GANDRE.pdf"
+                label="Resume"
+                prefixIcon="pages"
+                variant="secondary"
+                size="s"/>
+              }
+              {/* {
+                <IconButton variant="primary" size = "l" icon='pages'>
+                  <Text>Resume</Text>
+                </IconButton>           
+              } */}
+
               {display.themeSwitcher && (
                 <>
                   <Line background="neutral-alpha-medium" vert maxHeight="24" />
