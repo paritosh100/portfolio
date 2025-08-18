@@ -121,13 +121,12 @@ function CertificateCard({ item }: { item: CertificateItem }) {
             {/* Content row switches to column on mobile */}
             <Flex fillWidth gap="l" align="start" mobileDirection="column">
                 {/* Left: Thumbnail */}
-                <Column shrink="0" gap="s" fillWidth>
+                <Column style={{shrink:"0"}} gap="s" fillWidth>
                     {/* <SmartLink href={item.verificationUrl} target="_blank" aria-label={`Open credential for ${item.title}`}> */}
                         <Carousel
                             sizes="(max-width: 960px) 100vw, 640px"
                             items={[{ slide: item.image,
-                                 alt: item.title,
-                                 style: { objectFit: "cover" } 
+                                 alt: item.title
                                 
                                 }]}
                         />
@@ -152,7 +151,7 @@ function CertificateCard({ item }: { item: CertificateItem }) {
 
                     {/* Skills / Badges */}
                     {item.skills && item.skills.length > 0 ? (
-                        <Flex wrap="wrap" gap="xs">
+                        <Flex wrap gap="xs">
               {item.skills.map((skill) => (
                 <Flex
                   as="span"
