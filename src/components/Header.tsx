@@ -2,12 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { HiOutlineAcademicCap } from "react-icons/hi2";
 
-import { Fade, Flex, Line, ToggleButton, Button} from "@once-ui-system/core";
+import { Fade, Flex, Line, ToggleButton, Button, Icon } from "@once-ui-system/core";
 
-import { routes, display, person, about, blog, work, gallery } from "@/resources";
+import { routes, display, person, about, blog, work, certificates } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
-import styles from "./Header.module.scss";  
+import styles from "./Header.module.scss";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -127,15 +128,36 @@ export const Header = () => {
                     href="/work"
                     selected={pathname.startsWith("/work")}
                   />
-                </>                                     
+                </>
               )}
+              {routes["/certificates"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="check"
+                    href="/certificates"
+                    label="Certificates"
+                    selected={pathname.startsWith("/certificates")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon=""
+                    href="/certificates"
+                    selected={pathname.startsWith("/certificates")}
+                  />
+
+                </>
+              )
+
+              }
+
               {
-              <Button
-                href="/PARITOSH-GANDRE.pdf"
-                label="Resume"
-                prefixIcon="pages"
-                variant="secondary"
-                size="s"/>
+                <Button
+                  href="/PARITOSH-GANDRE.pdf"
+                  label="Resume"
+                  prefixIcon="pages"
+                  variant="secondary"
+                  size="s" />
               }
               {/* {
                 <IconButton variant="primary" size = "l" icon='pages'>

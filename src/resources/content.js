@@ -135,12 +135,12 @@ const about = {
         //   width: 16,
         //   height: 9,
         // },
-        {
-          src: "/images/projects/project-02/music-genre-classifier.png",
-          alt: "Music genre classifier",
-          width: 16,
-          height: 9,
-        },
+        // {
+        //   src: "/images/projects/project-02/music-genre-classifier.png",
+        //   alt: "Music genre classifier",
+        //   width: 16,
+        //   height: 9,
+        // },
       ],
     },
     {
@@ -151,12 +151,12 @@ const about = {
         </>
       ),
       images: [
-        {
-          src: "/images/projects/project-02/infection-simulation.png",
-          alt: "Infection simulation dashboard",
-          width: 16,
-          height: 9,
-        },
+        // {
+        //   src: "/images/projects/project-02/infection-simulation.png",
+        //   alt: "Infection simulation dashboard",
+        //   width: 16,
+        //   height: 9,
+        // },
       ],
     },
     {
@@ -167,12 +167,12 @@ const about = {
         </>
       ),
       images: [
-        {
-          src: "/images/projects/project-02/ai-blog-generator.png",
-          alt: "AI blog generator output",
-          width: 16,
-          height: 9,
-        },
+        // {
+        //   src: "/images/projects/project-02/ai-blog-generator.png",
+        //   alt: "AI blog generator output",
+        //   width: 16,
+        //   height: 9,
+        // },
       ],
     },
     {
@@ -183,12 +183,12 @@ const about = {
         </>
       ),
       images: [
-        {
-          src: "/images/projects/project-02/ai-blog-generator.png",
-          alt: "OpenAI Flask service",
-          width: 16,
-          height: 9,
-        },
+        // {
+        //   src: "/images/projects/project-02/ai-blog-generator.png",
+        //   alt: "OpenAI Flask service",
+        //   width: 16,
+        //   height: 9,
+        // },
       ],
     },
     {
@@ -357,5 +357,71 @@ const gallery = {
     },
   ],
 };
+const certificates = [
+  {
+    slug: "bioinformatics",
+    title: "Biology Meets Programming: Bioinformatics for Beginners",
+    issuer: "University of California San Diego",
+    date: "Aug 2025",
+    summary: "An introduction to bioinformatics and algorithms applied to DNA.",
+    image: "/images/certificates/Biology_programming.png",
+    link: "https://www.coursera.org/account/accomplishments/verify/XZRFEZ8ZEDMV",
+  },
+  {
+    slug: "cv-python",
+    title: "Building Computer Vision Applications with Python",
+    issuer: "LinkedIn Learning",
+    date: "Jul 2025",
+    summary: "Hands-on computer vision workflows using Python.",
+    image: "/images/certificates/COMPUTER_VISION-1.png",
+    link: "https://www.linkedin.com/learning/certificates/693598670cfe9c715af210c87b59a03e9dd66416f7fce775d509763a836e0ddb",
+  },
+  {
+    slug: "diffusion",
+    title: "Generative AI with Diffusion Models",
+    issuer: "Nvidia",
+    date: "Nov 2024",
+    summary: "Practical applications of diffusion models in generative AI.",
+    image: "/images/certificates/GENAI_DIFFUSION_MODELS-1.png",
+    link: "https://www.linkedin.com/in/paritosh-gandre/details/certifications/1731709384372/single-media-viewer",
+  },
+  {
+    slug: "data-analysis-r",
+    title: "Data Analysis with R Programming",
+    issuer: "Google",
+    date: "Oct 2024",
+    summary: "R programming applied to exploratory and statistical data analysis.",
+    image: "/images/certificates/DATA_ANALYSIS_R-1.png",
+    link: "https://www.coursera.org/account/accomplishments/verify/UU47EMIV791H",
+  },
+];
 
-export { person, social, newsletter, home, about, work, blog , gallery };
+const badges = [
+  {
+    slug: "aws-genai",
+    title: "AWS Educate Introduction to Generative AI",
+    issuer: "Amazon Web Services Training and Certification",
+    date: "2024",
+    image: "/images/badges/AWS_EDUCATE.png",
+    link: "https://www.credly.com/badges/8f7218d6-a436-4fd5-adff-1eb01796ddf2",
+  },
+  {
+    slug: "aws-data-analytics",
+    title: "AWS Academy Graduate - Data Analytics",
+    issuer: "Amazon Web Services",
+    date: "2023",
+    image: "/images/certificates/aws-data-analytics.png",
+    link: "https://www.credly.com/...",
+  },
+  {
+    slug: "aws-genai-intro",
+    title: "Introduction to GenAI - AWS Educate",
+    issuer: "Amazon Web Services",
+    date: "2023",
+    image: "/images/certificates/aws-genai.png",
+    link: "https://www.credly.com/badges/8f7218d6-a436-4fd5-adff-1eb01796ddf2",
+  },
+];
+
+
+export { person, social, newsletter, home, about, work, blog , gallery, certificates,badges };
