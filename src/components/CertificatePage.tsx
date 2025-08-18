@@ -121,7 +121,7 @@ function CertificateCard({ item }: { item: CertificateItem }) {
             {/* Content row switches to column on mobile */}
             <Flex fillWidth gap="l" align="start" mobileDirection="column">
                 {/* Left: Thumbnail */}
-                <Column style={{shrink:"0"}} gap="s" fillWidth>
+                <Column style={{flexShrink:1}} gap="s" fillWidth>
                     {/* <SmartLink href={item.verificationUrl} target="_blank" aria-label={`Open credential for ${item.title}`}> */}
                         <Carousel
                             sizes="(max-width: 960px) 100vw, 640px"
