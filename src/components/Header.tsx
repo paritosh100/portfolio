@@ -153,7 +153,7 @@ export const Header = () => {
 
               {
                 <Button
-                  href="/PARITOSH-GANDRE.pdf"
+                  href="/PARITOSH_GANDRE.pdf"
                   label="Resume"
                   prefixIcon="pages"
                   variant="secondary"

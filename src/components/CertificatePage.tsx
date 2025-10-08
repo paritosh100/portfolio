@@ -32,6 +32,15 @@ interface CertificateItem {
 // ----- Dummy Data (replace with your content) -----
 const CERTIFICATES: CertificateItem[] = [
   {
+    title: "AWS Cloud Technical Essential",
+    issuer: "Amazon Web Services(AWS)",
+    issued: "Oct 2025",
+    image: "/images/certificates/aws_tech.png",
+    verificationUrl: "https://www.coursera.org/account/accomplishments/verify/8F03GLXTK4NS",
+    skills: ["AWS", "Amazon RDS", "EC2","S3","VPC","Availability Zones"],
+  },
+  {
+
     title: "Biology Meets Programming: Bioinformatics for Beginners",
     issuer: "University of California San Diego",
     issued: "Aug 2025",
