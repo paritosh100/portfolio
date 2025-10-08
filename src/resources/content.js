@@ -50,7 +50,7 @@ const social = [
   {
     name: "CV",
     icon: "clipboard", // or "document" depending on what’s available in your /once-ui/icons.ts
-    link: "/Paritosh_Gandre_CV.pdf", // place your CV file in the public/ directory
+    link: "/PARITOSH_GANDRE_CV.pdf", // place your CV file in the public/ directory
     download: true, // optional: helps browsers download instead of open
   },
 ];
