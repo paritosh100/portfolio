@@ -47,6 +47,12 @@ const social = [
     icon: "email",
     link: `mailto:${person.email}`,
   },
+  {
+    name: "CV",
+    icon: "clipboard", // or "document" depending on what’s available in your /once-ui/icons.ts
+    link: "/Paritosh_Gandre_CV.pdf", // place your CV file in the public/ directory
+    download: true, // optional: helps browsers download instead of open
+  },
 ];
 
 const home = {
