@@ -1,0 +1,101 @@
+---
+title: "Predicting iPSC Differentiation Outcomes Using Machine Learning"
+publishedAt: "2025-10-09"
+summary: "Predicting iPSC differentiation outcomes using machine learning on synthetic biologically-inspired datasets. Built and compared multiple models (including Random Forest and TabNet) to forecast Purity, with an interactive Streamlit app for real-time protocol simulation."
+team:
+  - name: "Paritosh Gandre"
+    role: "Data Scientist"
+    avatar: "/images/LINKEDIN-PROFILE.png"
+    linkedIn: "https://www.linkedin.com/in/paritosh-gandre/"
+link: "https://github.com/paritosh100/ipsc-differentiation-predictor"
+---
+
+## 🔗 Links
+
+- [View Project on GitHub](https://github.com/paritosh100/ipsc-differentiation-predictor)
+
+---
+
+## 🧬 Overview
+
+This project simulates and models outcomes of **induced pluripotent stem cell (iPSC) differentiation** protocols using machine learning. The primary outcome predicted is **Purity**, a key metric representing how successfully stem cells have converted into target lineages.
+
+The project uses **synthetic, biologically inspired datasets** and multiple ML models (regression and deep learning) to evaluate how well different modeling techniques can predict experimental success.
+
+---
+
+## 🔑 Key Features
+
+- **Synthetic Dataset Simulation**  
+  Generated realistic cytokine concentrations, culture parameters (like O₂ %, seeding density), and gene expression profiles from known stem cell markers (e.g., SOX2, NANOG).
+
+- **Exploratory Data Analysis (EDA)**  
+  Used correlation heatmaps, outlier checks, and distribution analysis to understand feature relationships and detect experimental constraints.
+
+- **Modeling Multiple Algorithms**  
+  Trained and compared:
+  - Linear Regression
+  - XGBoost
+  - Random Forest
+  - MLP Neural Network
+  - TabNet (deep learning on tabular data)
+
+- **Performance Comparison**  
+  Used R², MAE, and RMSE metrics to benchmark models. Random Forest achieved the best overall performance.
+
+- **Interactive Streamlit App**  
+  Created a dashboard where users can simulate their protocol and get predicted purity in real-time.
+
+---
+
+## 🧪 Technologies Used
+
+- **Python & Pandas** – for data simulation and processing  
+- **Scikit-learn, XGBoost, MLPRegressor** – for modeling  
+- **PyTorch-TabNet** – for deep learning on tabular data  
+- **Matplotlib & Seaborn** – for data and model visualization  
+- **Streamlit** – for interactive web app  
+- **Jupyter Notebooks** – for step-by-step documentation  
+- **Joblib** – for model saving/loading  
+
+---
+
+## 🧠 Challenges & Learnings
+
+Simulating biologically reasonable protocols required domain knowledge to constrain ranges (e.g., realistic BMP4 doses). Deep models like TabNet required careful tuning and early stopping to perform competitively on small data.
+
+**Comparison between classical models and deep learning** taught valuable trade-offs:
+- Simpler models like Random Forest performed best due to dataset size and structure.
+- TabNet needed tuning but offered interpretability potential.
+- Neural nets (MLP) were highly sensitive to scale and data volume.
+
+This hands-on project strengthened my applied ML skills in real-world biological problems and helped bridge the gap between **wet lab protocol simulation** and **computational prediction.**
+
+---
+
+## 📊 Outcome
+
+- XGBoost — R²: 0.8438, MAE: 1.8502, RMSE: 2.0940
+
+- Random Forest — R²: 0.8718, MAE: 1.5575, RMSE: 1.8968
+
+- MLP (Neural Net) — R²: 0.4996, MAE: 3.3232, RMSE: 3.7478
+
+- TabNet (Optimized) — R²: 0.8622, MAE: 1.5711, RMSE: 1.9670
+
+Random Forest delivered the most consistent results, while TabNet showed strong potential with tuning. This comparison demonstrated the **importance of aligning model complexity with data availability** and problem goals.
+
+---
+
+## 🖥️ Next Steps
+
+- Add SHAP explanations for interpretability
+- Extend prediction to **Viability** and **Yield**
+- Deploy the Streamlit app publicly
+- Collect real-world datasets to validate synthetic findings
+
+---
+
+## 📜 License
+
+This project is under MIT License. Feel free to reuse with attribution.

@@ -7,6 +7,7 @@ export async function generateMetadata() {
     title: work.title,
     description: work.description,
     baseURL: baseURL,
+    publishedAt: work.publishedAt,
     image: `/api/og/generate?title=${encodeURIComponent(work.title)}`,
     path: work.path,
   });
@@ -20,6 +21,7 @@ export default function Work() {
         baseURL={baseURL}
         path={work.path}
         title={work.title}
+          publishedAt = {work.publishedAt}
         description={work.description}
         image={`/api/og/generate?title=${encodeURIComponent(work.title)}`}
         author={{

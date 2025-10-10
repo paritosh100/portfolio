@@ -64,8 +64,8 @@ const home = {
   headline: <>Turning Complex Data into Real-World Solutions </>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Infection-Spread</strong></>,
-    href: "/work/infection-simulation-project",
+    title: <>Recent project: <strong className="ml-4">Predicting iPSC Differentiation Outcomes Using Machine Learning </strong></>,
+    href: "/work/ipsc-purity-prediction",
   },
   subline: (
     <>
